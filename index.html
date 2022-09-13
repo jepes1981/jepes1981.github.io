@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <p>You will be redirected to <a href="https://sites.google.com/view/jeffcruz/home">https://sites.google.com/view/jeffcruz/home</a></p>
+<progress value="0" max="10" id="progressBar"></progress>
+
+	<script>
+  let timeleft = 10;
+const downloadTimer = setInterval(() => {
+  if (timeleft <= 0) {
+    window.location.href = "https://sites.google.com/view/jeffcruz/home";
+  }
+  document.getElementById("progressBar").value = 10 - timeleft;
+  timeleft -= 1;
+}, 1000);
+  </script>
+  </body>
+</html>
